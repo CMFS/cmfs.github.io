@@ -5,9 +5,6 @@ title: 首页
 ---
 
 <ul>
-	{% unless site.posts == empty? %}
-	<a href="{{ site.github.owner_url }}" class="btn">暂时没有内容</a>
-	{% endunless %}
 	{% for post in site.posts %}
 	<li>
 		<a href="{{ post.url }}">{{ post.title }}</a><br/>
